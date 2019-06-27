@@ -1,0 +1,22 @@
+{
+  "name": "relay-bug",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.2.2"
+  },
+  "devDependencies": {
+    "graphql": "^14.4.0",
+    "babel-plugin-relay": "^5.0.0",
+    "relay-compiler": "^5.0.0",
+    "relay-config": "^5.0.0"
+  },
+  "scripts": {
+    "relay": "relay-compiler --src src --schema schema.server.graphql"
+  },
+  "babel": {
+    "plugins": [
+      "relay"
+    ]
+  }
+}

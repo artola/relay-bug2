@@ -1,0 +1,11 @@
+type Query {
+  me: User
+}
+
+type User {
+  foo: Float
+}
+
+interface Node {
+  id: ID!
+}
